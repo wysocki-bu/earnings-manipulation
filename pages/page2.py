@@ -13,6 +13,10 @@ income_statement = aapl.income_stmt
 #st.write(income_statement)
 st.write(income_statement.iloc[[23],])
 
+cash_flow = aapl.cashflow
+#st.write(cash_flow)
+st.write(cash_flow.iloc[[35,36,46],])
+
 
 #if 'data' in st.session_state:
 #   st.write("Statistics of the DataFrame:")
