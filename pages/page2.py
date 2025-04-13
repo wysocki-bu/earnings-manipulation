@@ -18,8 +18,8 @@ income_statement = tic.income_stmt
 st.write(income_statement.loc[['Total Revenue'],:])
 
 cash_flow = tic.cashflow
-st.write(cash_flow)
-st.write(cash_flow.loc[['Operating Cash Flow','Net Income from Continuing Operations'],:])
+#st.write(cash_flow)
+st.write(cash_flow.loc[['Operating Cash Flow','Net Income From Continuing Operations'],:])
 
 
 #if 'data' in st.session_state:
