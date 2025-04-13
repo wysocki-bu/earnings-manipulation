@@ -34,5 +34,5 @@ edited_df = st.data_editor(
     hide_index=True,
 )
 
-favorite_command = edited_df.loc[edited_df["rating"].idxmax()]["command"]
-st.markdown(f"Your favorite command is **{favorite_command}** 🎈")
+highest_value = edited_df.loc[edited_df["yr_t"].idxmax()]["item"]
+st.markdown(f"The largest value in Year t is: **{highest_value}** 🎈")
