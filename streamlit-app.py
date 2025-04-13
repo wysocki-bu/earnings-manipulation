@@ -29,7 +29,11 @@ App_page_5 = st.Page(
 )
 App_page_6 = st.Page(
     "pages/page6.py",
-    title="5) V2 of List StreamLit App Code"
+    title="6) V2 of List StreamLit App Code"
+)
+App_page_7 = st.Page(
+    "pages/page7.py",
+    title="7) Manually Enter Data"
 )
 
 
@@ -37,7 +41,7 @@ App_page_6 = st.Page(
 pg = st.navigation(
     {
         "Start Here:": [App_page_0],
-        "Dashboard Options": [App_page_1, App_page_2, App_page_3, App_page_4, App_page_5, App_page_6]
+        "Dashboard Options": [App_page_1, App_page_2, App_page_3, App_page_4, App_page_5, App_page_6, App_page_7]
     }
 )
 
