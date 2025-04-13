@@ -9,23 +9,23 @@ App_page_0 = st.Page(
 )
 App_page_1 = st.Page(
     "pages/page1.py",
-    title="Page 1: See Raw Stock Data"
+    title="1) See Raw Stock Data"
 )
 App_page_2 = st.Page(
     "pages/page2.py",
-    title="Page 2: See Data Statistics"
+    title="2) See Data Statistics"
 )
 App_page_3 = st.Page(
     "pages/page3.py",
-    title="Page 3: See Stock Price Graph"
+    title="3) See Stock Price Graph"
 )
 App_page_4 = st.Page(
     "pages/page4.py",
-    title="Page 4: List Model Training Code"
+    title="4) List Model Training Code"
 )
 App_page_5 = st.Page(
     "pages/page5.py",
-    title="Page 5: List StreamLit App Code"
+    title="5) List StreamLit App Code"
 )
 
 # **** Set up navigation with section headers ****
