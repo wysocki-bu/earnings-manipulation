@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import requests
 
 # Print out the title for Page 1: View stock info dataframe
 st.title("Page 1: Get SIC Code for Ticker")
@@ -34,10 +35,21 @@ def getCIK(ticker):
         return None
 CIK = getCIK(ticker_symbol)
 
-st.write(CIK)
-
 CIK_STR = str(CIK).zfill(10)
 st.write(CIK_STR)
+
+headers = {'User-Agent': "wysockip@bu.edu"}
+
+edgar_URL="https://www.sec.gov/cgi-bin/browse-edgar?CIK="+CIK_STR
+#print(edgar_URL)
+r = requests.get(edgar_URL, headers=headers)
+
+info=r.text
+index = info.find("SIC=")
+
+if index != -1:
+    substring = info[index:index + 8]
+    st.write(substring)
 
 
 #st.dataframe(st.session_state.data, use_container_width=True)
