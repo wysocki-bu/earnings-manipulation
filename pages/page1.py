@@ -10,6 +10,35 @@ st.title("Page 1: Get SIC Code for Ticker")
 
 ticker_symbol = st.text_input("Enter Stock Ticker (e.g., AAPL, MSFT)", value="MSFT")
 
+#Get the CIK of a ticker from the downloaded cik.csv file
+#cik.csv is a tab delimited file with all tickers and CIKs
+
+#location of cik.csv
+cikDir = 'pages/cik.csv'
+
+#read cik.csv as a pandas DataFrame
+ciksDF = pd.read_csv(cikDir, delimiter='\t', header=None)
+
+#set the column with all the tickers as the index
+ciksDF = ciksDF.set_index(0)
+
+
+#function to return CIK of a ticker
+def getCIK(ticker):
+    #return CIK if it exists
+    try:
+        return int(ciksDF.loc[ticker.lower(), 1])
+
+    #return None there's no CIK for the ticker
+    except:
+        return None
+CIK = getCIK(ticker_symbol)
+
+st.write(CIK)
+
+CIK_STR = str(CIK).zfill(10)
+st.write(CIK_STR)
+
 
 #st.dataframe(st.session_state.data, use_container_width=True)
 
