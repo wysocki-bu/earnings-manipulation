@@ -8,9 +8,9 @@ ticker_symbol = st.text_input("Enter Stock Ticker (e.g., AAPL, MSFT)", value="MS
 
 #aapl = yf.Ticker("AAPL")
 tic = yf.Ticker(ticker_symbol)
-if tic.empty:
-   st.error("No ticker found. Please check the ticker symbol.")
-   st.stop()
+#if tic.empty:
+#   st.error("No ticker found. Please check the ticker symbol.")
+#   st.stop()
 
 balance_sheet = tic.balance_sheet
 #st.write(balance_sheet)
