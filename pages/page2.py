@@ -15,7 +15,7 @@ st.write(income_statement.iloc[[23],])
 
 cash_flow = aapl.cashflow
 #st.write(cash_flow)
-st.write(cash_flow.iloc[[34,35,45],])
+st.write(cash_flow.iloc[[34,35,45,53],])
 
 
 #if 'data' in st.session_state:
