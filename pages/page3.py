@@ -13,10 +13,15 @@ tabs = st.tabs(["📋 Manual Data Entry", "📈 Automatic Using Ticker", "📊 E
 with tabs[0]:
     st.subheader("Manually Enter Stock Information")
     if 'df' not in st.session_state:
-        st.session_state['df'] = pd.DataFrame({'col1': [], 'col2': []})
-    
-    edited_df = st.data_editor(st.session_state['df'], num_rows="dynamic")
-    st.session_state['df'] = edited_df    
+        st.session_state['df'] = pd.DataFrame(
+            [
+              {"command": "st.selectbox", "rating": 4, "is_widget": True},
+              {"command": "st.balloons", "rating": 5, "is_widget": False},
+              {"command": "st.time_input", "rating": 3, "is_widget": True},
+            ]
+        ) 
+     edited_df = st.data_editor(st.session_state['df'])
+     st.session_state['df'] = edited_df    
       
 # Tab 2: Get Data from YFinance
 with tabs[1]:
