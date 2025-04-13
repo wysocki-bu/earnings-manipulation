@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Page 5: Code for this StreamLit App")
 
-# The original Githiub repository for this app can be found here:
+# The original Github repository for this app can be found here:
 # http:
 
 st.header("Code for Page 1")
