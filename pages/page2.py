@@ -15,7 +15,7 @@ st.write(balance_sheet.loc[['Total Assets','Gross PPE','Accounts Receivable'],:]
 
 income_statement = tic.income_stmt
 #st.write(income_statement)
-st.write(income_statement.loc[['Total Revenue'],:])
+st.write(income_statement.loc[['Total Revenue','Net Income from Continuing Operations],:])
 
 cash_flow = tic.cashflow
 #st.write(cash_flow)
