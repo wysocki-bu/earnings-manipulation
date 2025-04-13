@@ -9,7 +9,7 @@ balance_sheet = aapl.balance_sheet
 #print(balance_sheet)
 st.write(balance_sheet)
 
-st.write(balance_sheet.iloc[[40,51,61],])
+st.write(balance_sheet.iloc[[40,51,62],])
 
 
 #if 'data' in st.session_state:
