@@ -13,13 +13,16 @@ tabs = st.tabs(["📋 Manual Data Entry", "📈 Automatic Using Ticker", "📊 E
 with tabs[0]:
     st.subheader("Manually Enter Stock Information")
     if 'df' not in st.session_state:
-        st.session_state['df'] = pd.DataFrame(
-            [
-              {"command": "st.selectbox", "rating": 4, "is_widget": True},
-              {"command": "st.balloons", "rating": 5, "is_widget": False},
-              {"command": "st.time_input", "rating": 3, "is_widget": True},
-            ]
-        ) 
+        st.session_state['df'] = pd.DataFrame({'col1': [1,2], 'col2': [3,4]})
+
+        
+#        st.session_state['df'] = pd.DataFrame(
+#            [
+#              {"command": "st.selectbox", "rating": 4, "is_widget": True},
+#              {"command": "st.balloons", "rating": 5, "is_widget": False},
+#              {"command": "st.time_input", "rating": 3, "is_widget": True},
+#            ]
+#        ) 
      edited_df = st.data_editor(st.session_state['df'])
      st.session_state['df'] = edited_df    
       
