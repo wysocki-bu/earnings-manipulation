@@ -15,7 +15,7 @@ st.write(balance_sheet.iloc[[40,51,62],])
 
 income_statement = tic.income_stmt
 #st.write(income_statement)
-st.write(income_statement.loc[['Total Revenue'],:]
+st.write(income_statement.loc[['Total Revenue'],:])
 
 cash_flow = tic.cashflow
 #st.write(cash_flow)
