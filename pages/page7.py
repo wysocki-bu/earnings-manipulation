@@ -3,9 +3,15 @@ import streamlit as st
 
 df = pd.DataFrame(
     [
-        {"command": "st.selectbox", "rating": 4, "is_widget": True},
-        {"command": "st.balloons", "rating": 5, "is_widget": False},
-        {"command": "st.time_input", "rating": 3, "is_widget": True},
+        {"Accounting Item": "Net Income", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": True},
+        {"Accounting Item": "Revenue", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": False},
+        {"Accounting Item": "Gross PPE", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": True},
+        {"Accounting Item": "Accts Receivable", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": True},
+        {"Accounting Item": "Total Assets", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": False},
+        {"Accounting Item": "Operating Cash Flow", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": True},
+
+
+        
     ]
 )
 edited_df = st.data_editor(
