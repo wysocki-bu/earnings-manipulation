@@ -9,6 +9,7 @@ df = pd.DataFrame(
         {"item": "Accts Receivable", "yr_t": 0, "yr_t_1": 0, "is_widget": True},
         {"item": "Total Assets", "yr_t": 0, "yr_t_1": 0, "is_widget": False},
         {"item": "Operating Cash Flow", "yr_t": 0, "yr_t_1": 0, "is_widget": True},
+        {"item": "4-digit SIC Code", "yr_t": 0, "yr_t_1": 0, "is_widget": True},
 
 
         
