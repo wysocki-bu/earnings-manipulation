@@ -11,7 +11,7 @@ tic = yf.Ticker(ticker_symbol)
 
 balance_sheet = tic.balance_sheet
 #st.write(balance_sheet)
-st.write(balance_sheet.iloc[[40,51,62],])
+st.write(balance_sheet.iloc[['Total Assets','Gross PPE'],:])
 
 income_statement = tic.income_stmt
 #st.write(income_statement)
