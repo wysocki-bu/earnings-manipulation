@@ -13,7 +13,7 @@ end_date = st.sidebar.date_input("End Date", value=pd.to_datetime("2024-12-31"))
 
 # Print update onb which ticker and dates
 st.write(f"You have selected **{ticker_symbol}** from {start_date} to {end_date}.")
-st.markdown(''':red[Now click on] :blue-background[Page 1, 2 or 3] to the left to view analyses.''')
+st.markdown(''':red[Now click on] :blue-background[selections 1-5] to the left to view analyses.''')
 
 # Access the stock data for the given tocker using the yfinance "download" function
 # Temporarily store data in "df" dataframe
