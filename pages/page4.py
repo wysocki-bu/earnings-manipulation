@@ -15,7 +15,7 @@ import statsmodels.api as sm'''
 
 st.code(code, language="python")
 
-with open("model1.py", 'r') as file:
+with open('pages/model1.py', 'r') as file:
             code = file.read()
             st.code(code, language='python')
 #st.title("Page 3: Close Price data")
