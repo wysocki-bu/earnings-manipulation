@@ -30,7 +30,7 @@ edited_df = st.data_editor(
         ),
         "is_widget": "Widget ?",
     },
-    disabled=["command", "is_widget"],
+    disabled=["item", "is_widget"],
     hide_index=True,
 )
 
