@@ -5,13 +5,12 @@ st.title("Page 3: Original Code for Training Abnormal Accruals Model")
 # The original Colab Notebook Python Code can be found here:
 # http:
 
-code = '''def hello():
-    print("Hello, Streamlit!")'''
+code = '''import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import statsmodels.api as sm'''
 
 st.code(code, language="python")
-
-
-
 
 
 #st.title("Page 3: Close Price data")
