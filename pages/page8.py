@@ -2,7 +2,7 @@ import streamlit as st
 import statsmodels.api as sm
 import pickle
 
-filename = 'ols_model.pkl'
+filename = 'pages/ols_model.pkl'
 
 # Load the model
 loaded_model = pickle.load(open(filename, 'rb'))
