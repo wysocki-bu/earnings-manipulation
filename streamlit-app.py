@@ -21,7 +21,7 @@ App_page_3 = st.Page(
 )
 App_page_4 = st.Page(
     "pages/page4.py",
-    title="Page 4: See Python Code for Model Training"
+    title="Page 4: Python Code: Model Training"
 )
 
 # **** Set up navigation with section headers ****
