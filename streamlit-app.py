@@ -27,12 +27,17 @@ App_page_5 = st.Page(
     "pages/page5.py",
     title="5) List StreamLit App Code"
 )
+App_page_6 = st.Page(
+    "pages/page6.py",
+    title="5) V2 of List StreamLit App Code"
+)
+
 
 # **** Set up navigation with section headers ****
 pg = st.navigation(
     {
         "Start Here:": [App_page_0],
-        "Dashboard Options": [App_page_1, App_page_2, App_page_3, App_page_4, App_page_5]
+        "Dashboard Options": [App_page_1, App_page_2, App_page_3, App_page_4, App_page_5, App_page_6]
     }
 )
 
