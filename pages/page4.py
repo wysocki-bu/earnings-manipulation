@@ -10,9 +10,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.api as sm'''
 
+
+
+
 st.code(code, language="python")
 
-
+with open(file_path, 'r') as file:
+            code = file.read()
+            st.code(code, language='python')
 #st.title("Page 3: Close Price data")
 
 # Plot a Linbe Chart of the Stock Price of the stock
