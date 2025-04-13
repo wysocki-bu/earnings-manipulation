@@ -3,12 +3,12 @@ import streamlit as st
 
 df = pd.DataFrame(
     [
-        {"Accounting Item": "Net Income", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": True},
-        {"Accounting Item": "Revenue", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": False},
-        {"Accounting Item": "Gross PPE", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": True},
-        {"Accounting Item": "Accts Receivable", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": True},
-        {"Accounting Item": "Total Assets", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": False},
-        {"Accounting Item": "Operating Cash Flow", "This Year (t)": 0, "Last Year (t-1)": 0, "is_widget": True},
+        {"item": "Net Income", "yr_t": 0, "yr_t_1": 0, "is_widget": True},
+        {"item": "Revenue", "yr_t": 0, "yr_t_1": 0, "is_widget": False},
+        {"item": "Gross PPE", "yr_t": 0, "yr_t_1": 0, "is_widget": True},
+        {"item": "Accts Receivable", "yr_t": 0, "yr_t_1": 0, "is_widget": True},
+        {"item": "Total Assets", "yr_t": 0, "yr_t_1": 0, "is_widget": False},
+        {"item": "Operating Cash Flow", "yr_t": 0, "yr_t_1": 0, "is_widget": True},
 
 
         
@@ -17,14 +17,16 @@ df = pd.DataFrame(
 edited_df = st.data_editor(
     df,
     column_config={
-        "command": "Streamlit Command",
-        "rating": st.column_config.NumberColumn(
-            "Your rating",
-            help="How much do you like this command (1-5)?",
-            min_value=1,
-            max_value=5,
-            step=1,
-            format="%d ⭐",
+        "item": "Accounting Item",
+        "yr_t": st.column_config.NumberColumn(
+            "This Year (t)",
+            help="Enter Values for Current Year",
+            min_value=0,
+        ),
+        "yr_t_1": st.column_config.NumberColumn(
+            "Prior Year (t-1)",
+            help="Enter Values for Prior Year",
+            min_value=0,            
         ),
         "is_widget": "Widget ?",
     },
