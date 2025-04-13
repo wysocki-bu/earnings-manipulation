@@ -6,10 +6,12 @@ st.title("Page 2: Financials")
 
 aapl = yf.Ticker("AAPL")
 balance_sheet = aapl.balance_sheet
-#print(balance_sheet)
-
 #st.write(balance_sheet)
 st.write(balance_sheet.iloc[[40,51,62],])
+
+income_statement = aapl.income_stmt
+#st.write(income_statement)
+st.write(income_statement.iloc[[23],])
 
 
 #if 'data' in st.session_state:
