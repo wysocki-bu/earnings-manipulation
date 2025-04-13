@@ -8,12 +8,11 @@ ticker_symbol = st.text_input("Enter Stock Ticker (e.g., AAPL, MSFT)", value="MS
 
 #aapl = yf.Ticker("AAPL")
 tic = yf.Ticker(ticker_symbol)
-st.write(tic)
-#if tic.empty:
-#   st.error("No ticker found. Please check the ticker symbol.")
-#   st.stop()
 
 balance_sheet = tic.balance_sheet
+if balance_sheet.empty:
+   st.error("No data found. Please check the ticker symbol.")
+   st.stop()
 #st.write(balance_sheet)
 st.write(balance_sheet.loc[['Total Assets','Gross PPE','Accounts Receivable'],:])
 
