@@ -35,13 +35,18 @@ App_page_7 = st.Page(
     "pages/page7.py",
     title="7) Manually Enter Data"
 )
+App_page_8 = st.Page(
+    "pages/page7.py",
+    title="8) Regression Output"
+)
+
 
 
 # **** Set up navigation with section headers ****
 pg = st.navigation(
     {
         "Start Here:": [App_page_0],
-        "Dashboard Options": [App_page_1, App_page_2, App_page_3, App_page_4, App_page_5, App_page_6, App_page_7]
+        "Dashboard Options": [App_page_1, App_page_2, App_page_3, App_page_4, App_page_5, App_page_6, App_page_7, App_page_8]
     }
 )
 
