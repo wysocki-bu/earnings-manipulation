@@ -15,11 +15,11 @@ st.write(balance_sheet.loc[['Total Assets','Gross PPE','Accounts Receivable'],:]
 
 income_statement = tic.income_stmt
 #st.write(income_statement)
-st.write(income_statement.loc[['Total Revenue','Net Income from Continuing Operations'],:])
+st.write(income_statement.loc[['Total Revenue'],:])
 
 cash_flow = tic.cashflow
 #st.write(cash_flow)
-st.write(cash_flow.iloc[[34,35,45,52],])
+st.write(cash_flow.loc[['Net Income from Continuing Operations','Operating Cash Flow'],:])
 
 
 #if 'data' in st.session_state:
