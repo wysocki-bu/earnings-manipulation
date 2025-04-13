@@ -4,16 +4,20 @@ import yfinance as yf
 
 st.title("Page 2: Financials")
 
-aapl = yf.Ticker("AAPL")
-balance_sheet = aapl.balance_sheet
+ticker_symbol = st.text_input("Enter Stock Ticker (e.g., AAPL, MSFT)", value="MSFT")
+
+#aapl = yf.Ticker("AAPL")
+tic = yf.Ticker(ticker_symbol)
+
+balance_sheet = tic.balance_sheet
 #st.write(balance_sheet)
 st.write(balance_sheet.iloc[[40,51,62],])
 
-income_statement = aapl.income_stmt
+income_statement = tic.income_stmt
 #st.write(income_statement)
 st.write(income_statement.iloc[[23],])
 
-cash_flow = aapl.cashflow
+cash_flow = tic.cashflow
 #st.write(cash_flow)
 st.write(cash_flow.iloc[[34,35,45,52],])
 
