@@ -1,23 +1,27 @@
+# Import necessary packages (* Make sure to also include in "requirements.txt" in this repository
 import streamlit as st
-
-st.title("Page 3: Original Code for Training Abnormal Accruals Model")
-
-# The original Colab Notebook Python Code can be found here:
-# http:
-
-code = '''import numpy as np
+import yfinance as yf
 import pandas as pd
-import matplotlib.pyplot as plt
-import statsmodels.api as sm'''
 
-st.code(code, language="python")
+# Print Title for the App
+st.title("3. Enter Stock Financial Data")
 
+# Set up the 3 tabs on the Dashboard
+tabs = st.tabs(["📋 Manual Data Entry", "📈 Automatic Using Ticker", "📊 Empty"])
 
-#st.title("Page 3: Close Price data")
+# Tab 1: Manual Data Entry 
+with tabs[0]:
+    st.subheader("Manually Enter Stock Information")
+    if 'df' not in st.session_state:
+        st.session_state['df'] = pd.DataFrame({'col1': [], 'col2': []})
+    
+    edited_df = st.data_editor(st.session_state['df'], num_rows="dynamic")
+    st.session_state['df'] = edited_df    
+      
+# Tab 2: Get Data from YFinance
+with tabs[1]:
+    st.subheader("Look Up Data in Real Time - Ticker")
 
-# Plot a Linbe Chart of the Stock Price of the stock
-#if 'data' in st.session_state:
-#   st.line_chart(st.session_state.data['Close'])
-
-#else:
-#   st.write("No stock data found. Please select stock on Main Page.")
+# Tab 3: Blank
+with tabs[2]:
+    st.subheader("Blank for the moment")
