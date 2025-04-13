@@ -14,7 +14,7 @@ ticker_symbol = st.text_input("Enter Stock Ticker (e.g., AAPL, MSFT)", value="MS
 #cik.csv is a tab delimited file with all tickers and CIKs
 
 #location of cik.csv
-cikDir = 'cik.csv'
+cikDir = 'pages/cik.csv'
 
 #read cik.csv as a pandas DataFrame
 ciksDF = pd.read_csv(cikDir, delimiter='\t', header=None)
