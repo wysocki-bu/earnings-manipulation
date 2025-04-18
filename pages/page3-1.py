@@ -37,12 +37,18 @@ with tabs[0]:
 with tabs[1]:
 
    balance_sheet.columns = range(len(balance_sheet.columns))
-   inv_ta = 1/(balance_sheet.loc[['Total Assets'],1])
+#   inv_ta = 1/(balance_sheet.loc[['Total Assets'],1])
 
-   data = {'inv_ta': [(balance_sheet.loc[['Gross PPE'],1])/(balance_sheet.loc[['Total Assets'],1])]}
-   df = pd.DataFrame(data)
-   #ppe_ta = (balance_sheet.loc[['Gross PPE'],1])/(balance_sheet.loc[['Total Assets'],1])
-   st.write(df)
+   df2 = pd.DataFrame({'inv_ta': [0], 'Dsale_ta': [0]})
+
+# Store element from df1 (value 5) into df2 at a specific location
+   df2.at[0,'inv_ta'] = balance_sheet.at['Total Assets'],1]
+   st.write(df2)
+   
+#   data = {'inv_ta': [(balance_sheet.loc[['Gross PPE'],1])/(balance_sheet.loc[['Total Assets'],1])]}
+#   df = pd.DataFrame(data)
+#   ppe_ta = (balance_sheet.loc[['Gross PPE'],1])/(balance_sheet.loc[['Total Assets'],1])
+#   st.write(df)
 #   st.write(df"1/TA(t-1) = ",inv_ta)
 #   st.write("GrossPPE(t)/TA(t-1) = ",ppe_ta)
 
