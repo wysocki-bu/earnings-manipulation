@@ -54,11 +54,6 @@ with tabs[1]:
    #view new DataFrame
    #print(df_new)
 
-   st.subheader(f"Code for Page 2")
-   with open('pages/page2.py', 'r') as file:
-      code = file.read()
-      st.code(code, language='python')
-
 # Tab 3: page3.py
 with tabs[2]:
     st.subheader(f"Code for Page 3")
