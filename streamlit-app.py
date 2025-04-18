@@ -8,7 +8,7 @@ App_page_0 = st.Page(
     default=True
 )
 App_page_1 = st.Page(
-    "pages/page1.py",
+    "pages/page1a.py",
     title="1) See Raw Stock Data"
 )
 App_page_2 = st.Page(
