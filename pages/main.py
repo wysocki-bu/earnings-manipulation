@@ -3,8 +3,14 @@ import pandas as pd
 import yfinance as yf
 
 # Print out info for the Main page:
-st.title("Main Page: Please select a stock")
-st.header("<---- Enter ticker & dates in Sidebar Prompts.")
+st.title("Example App: Find Abnormal Accruals for a Company")
+st.header("What, How, Why?")
+
+st.write(f"What: .")
+st.write(f"Wh: .")
+st.write(f"How: .")
+
+
 
 # Sidebar inputs for ticker symbol and dates
 ticker_symbol = st.sidebar.text_input("Enter Stock Ticker (e.g., AAPL, MSFT)", value="MSFT")
