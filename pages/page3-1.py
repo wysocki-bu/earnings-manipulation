@@ -40,10 +40,11 @@ with tabs[1]:
 #   inv_ta = 1/(balance_sheet.loc[['Total Assets'],1])
 
    df2 = pd.DataFrame({'inv_ta': [0], 'Dsale_ta': [0]})
+   st.write(df2)
 
 # Store element from df1 (value 5) into df2 at a specific location
-   df2.at[0,'inv_ta'] = balance_sheet.at['Total Assets'],1]
-   st.write(df2)
+#   df2.at[0,'inv_ta'] = balance_sheet.at['Total Assets'],1]
+#   st.write(df2)
    
 #   data = {'inv_ta': [(balance_sheet.loc[['Gross PPE'],1])/(balance_sheet.loc[['Total Assets'],1])]}
 #   df = pd.DataFrame(data)
