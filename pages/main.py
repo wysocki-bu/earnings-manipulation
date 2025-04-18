@@ -17,9 +17,9 @@ st.image("pages/files/jonesmodel.png", caption="The model of normal accruals: Th
 st.write(f"Wh: .")
 st.write(f"How: .")
 
-url = "https://www.streamlit.io"
-st.write("check out this [link](%s)" % url)
-st.markdown("check out this [link](%s)" % url)
+url = "https://github.com/wysocki-bu/earnings-manipulation/"
+st.write("Link to GitHub respository for StreamLit App is here: [https://github.com/wysocki-bu/earnings-manipulation/](%s)" %url)
+
 
 
 
