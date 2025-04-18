@@ -21,8 +21,12 @@ url = "https://github.com/wysocki-bu/earnings-manipulation/"
 st.write("Link to GitHub respository for StreamLit App is here:")
 st.write("[https://github.com/wysocki-bu/earnings-manipulation/](%s)" %url)
 
+st.divider() 
 
-
+st.subheader("Streamlit Python Code for this page:")
+with open('pages/main2.py', 'r') as file:
+            code = file.read()
+            st.code(code, language='python')
 
 # Sidebar inputs for ticker symbol and dates
 ticker_symbol = st.sidebar.text_input("Enter Stock Ticker (e.g., AAPL, MSFT)", value="MSFT")
