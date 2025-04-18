@@ -12,10 +12,10 @@ st.write("This App trains a version of <Modified Jones Model> using data from Co
 st.write("regular association between operations and accruals. Abnormal accruals are the residuals (e)")
 st.write("from the model below:")
  
-st.image("pages/files/jonesmodel.png", caption="The model of normal accruals: The Modified Jones Model")
+st.image("pages/files/model.png", caption="The model of normal accruals: Performance Matched Modified Jones Model")
 
-st.write(f"Wh: .")
-st.write(f"How: .")
+st.markdown(''' :rainbow[Why?]''')
+st.markdown(''' :rainbow[How?]''')
 
 url = "https://github.com/wysocki-bu/earnings-manipulation/"
 st.write("Link to GitHub respository for StreamLit App is here:")
