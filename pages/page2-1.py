@@ -9,6 +9,7 @@ loaded_model = pickle.load(open(filename, 'rb'))
 
 # Display the results in Streamlit
 st.title("2) Parameters of Trained OLS Model")
+st.image("pages/files/model.png", caption="The model of normal accruals: Performance Matched Modified Jones Model")
 
 # Display the model summary
 st.write("Model Summary:")
