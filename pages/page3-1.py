@@ -44,6 +44,10 @@ with tabs[1]:
    st.write("GrossPPE(t)/TA(t-1) = ",ppe_ta)
    roa = 881/4419
    st.write("ROA(t) = ",roa)
+   cfo_ta = 1185/4419
+   st.write(CFO(t)/TA(t-1) = ",cfo_ta)
+   tac_ta = roa - cfo_ta
+   st.write("Total Accruals = TAC(t)/TA(t-1) = ", tac_ta)
 
 
 # Tab 3: Forecast Abnormal Accruals
