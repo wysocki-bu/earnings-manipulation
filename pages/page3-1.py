@@ -35,6 +35,8 @@ with tabs[0]:
 
 # Tab 2: Financial Ratios for Ticker
 with tabs[1]:
+
+   balance_sheet.columns = range(len(df.columns))
    st.write(balance_sheet.loc[['Total Assets'],1])
    st.write(balance_sheet.loc[['Gross PPE'],0])
 
