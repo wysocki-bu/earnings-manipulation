@@ -39,7 +39,7 @@ with tabs[1]:
    balance_sheet.columns = range(len(balance_sheet.columns))
 #   inv_ta = 1/(balance_sheet.loc[['Total Assets'],1])
 
-   df2 = pd.DataFrame({'inv_ta': [0], 'Dsale_ta': [0]})
+#   df2 = pd.DataFrame({'inv_ta': [0], 'Dsale_ta': [0]})
    st.write(df2)
 
 # Store element from df1 (value 5) into df2 at a specific location
