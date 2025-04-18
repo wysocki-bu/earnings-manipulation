@@ -7,7 +7,7 @@ st.title("Find Abnormal Accruals for a Stock")
 st.header("Modified Jones Model App")
 st.subheader("What, How, Why?")
 
-st.write(f"What?")
+st.subsubheader("What?")
 st.write("This App trains a version of <Modified Jones Model> using data from Compustat to determine the")
 st.write("regular association between operations and accruals. Abnormal accruals are the residuals (e)")
 st.write("from the model below:")
