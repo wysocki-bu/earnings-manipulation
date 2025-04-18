@@ -18,7 +18,8 @@ st.write(f"Wh: .")
 st.write(f"How: .")
 
 url = "https://github.com/wysocki-bu/earnings-manipulation/"
-st.write("Link to GitHub respository for StreamLit App is here: [https://github.com/wysocki-bu/earnings-manipulation/](%s)" %url)
+st.write("Link to GitHub respository for StreamLit App is here:")
+st.write("[https://github.com/wysocki-bu/earnings-manipulation/](%s)" %url)
 
 
 
