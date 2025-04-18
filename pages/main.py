@@ -24,7 +24,7 @@ st.write("[https://github.com/wysocki-bu/earnings-manipulation/](%s)" %url)
 st.divider() 
 
 st.subheader("Streamlit Python Code for this page:")
-with open('pages/main2.py', 'r') as file:
+with open('pages/main.py', 'r') as file:
             code = file.read()
             st.code(code, language='python')
 
