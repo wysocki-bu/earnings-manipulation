@@ -13,8 +13,8 @@ loaded_model = pickle.load(open(filename, 'rb'))
 st.title("2) Forecast Using Trained Model")
 st.header("   Select Tab in Sequence to Forecast Abnormal Accruals for a Stock Ticker")
 
-# Set up the 3 tabs on the Dashboard
-tabs = st.tabs(["📋 Select Ticker", "📈 View Forecasted Accruals", "📊 Change Ratios (What If?)"])
+# Set up the4 tabs on the Dashboard
+tabs = st.tabs(["> Select Ticker", "> View Ratios", "> View Forecasted Accruals", "> Change Ratios (What If?)"])
 
 # Tab 1: Select Ticker 
 with tabs[0]:
@@ -32,9 +32,15 @@ with tabs[0]:
 
    cash_flow = tic.cashflow
    st.write(cash_flow.loc[['Operating Cash Flow','Net Income From Continuing Operations'],:])
-    
-# Tab 2: Forecast Abnormal Accruals
+
+# Tab 2: Financial Ratios for Ticker
 with tabs[1]:
+   st.write(balance_sheet.loc[['Total Assets',],1])
+   st.write(balance_sheet.loc[['Gross PPE',],0])
+
+
+# Tab 3: Forecast Abnormal Accruals
+with tabs[2]:
 
    # load model
    # Display the results in Streamlit
@@ -54,8 +60,8 @@ with tabs[1]:
    #view new DataFrame
    #print(df_new)
 
-# Tab 3: page3.py
-with tabs[2]:
+# Tab 4: page3.py
+with tabs[3]:
     st.subheader(f"Code for Page 3")
     with open('pages/page3.py', 'r') as file:
             code = file.read()
