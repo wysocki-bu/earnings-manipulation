@@ -51,8 +51,6 @@ pg = st.navigation(
 )
 
 
-# **** text/images shared on all pages ****
-st.sidebar.markdown("Sidebar Prompts:")
 
 
 # **** Execute the navigation code ****
