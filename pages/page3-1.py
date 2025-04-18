@@ -44,24 +44,6 @@ with tabs[1]:
    st.write("GrossPPE(t)/TA(t-1) = ",ppe_ta)
    roa = 881/4419
    st.write("ROA(t) = ",roa)
-   
-   
-   balance_sheet.columns = range(len(balance_sheet.columns))
-#   inv_ta = 1/(balance_sheet.loc[['Total Assets'],1])
-
-#   df2 = pd.DataFrame({'inv_ta': [0], 'Dsale_ta': [0]})
-   st.write(df2)
-
-# Store element from df1 (value 5) into df2 at a specific location
-#   df2.loc[0,'inv_ta'] = balance_sheet.at['Total Assets'],1]
-#   st.write(df2)
-   
-#   data = {'inv_ta': [(balance_sheet.loc[['Gross PPE'],1])/(balance_sheet.loc[['Total Assets'],1])]}
-#   df = pd.DataFrame(data)
-#   ppe_ta = (balance_sheet.loc[['Gross PPE'],1])/(balance_sheet.loc[['Total Assets'],1])
-#   st.write(df)
-#   st.write(df"1/TA(t-1) = ",inv_ta)
-#   st.write("GrossPPE(t)/TA(t-1) = ",ppe_ta)
 
 
 # Tab 3: Forecast Abnormal Accruals
@@ -70,20 +52,6 @@ with tabs[2]:
    # load model
    # Display the results in Streamlit
    st.title("Parameters of Trained OLS Model")
-
-   # Display the model summary
-   st.write("Model Summary:")
-   st.write(loaded_model.summary())
-
-   #create new DataFrame
-   df_new = pd.DataFrame({'hours': [1, 2, 2, 4, 5],
-                       'exams': [1, 1, 4, 3, 3]})
-
-   #add column for constant
-   df_new = sm.add_constant(df_new)
-
-   #view new DataFrame
-   #print(df_new)
 
 # Tab 4: page3.py
 with tabs[3]:
