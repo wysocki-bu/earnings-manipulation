@@ -43,7 +43,7 @@ with tabs[1]:
    ppe_ta = 2310/4419
    st.write("GrossPPE(t)/TA(t-1) = ",ppe_ta)
    roa = 881/4419
-   st.write("ROA(t) = ",ROA)
+   st.write("ROA(t) = ",roa)
    
    
    balance_sheet.columns = range(len(balance_sheet.columns))
