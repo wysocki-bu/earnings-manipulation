@@ -35,9 +35,16 @@ with tabs[0]:
 
 # Tab 2: Financial Ratios for Ticker
 with tabs[1]:
-
+   st.subheader("Calculated Features for MSFT")
    inv_ta = 1/4419
-   st.write(inv_ta)
+   st.write("1/TA(t-1) = ",inv_ta)
+   Dsale_ta = (2451-2119)/4419
+   st.write("Dsale(t)/TA(t-1) = ",Dsale_ta)
+   ppe_ta = 2310/4419
+   st.write("GrossPPE(t)/TA(t-1) = ",ppe_ta)
+   roa = 881/4419
+   st.write("ROA(t) = ",ROA)
+   
    
    balance_sheet.columns = range(len(balance_sheet.columns))
 #   inv_ta = 1/(balance_sheet.loc[['Total Assets'],1])
