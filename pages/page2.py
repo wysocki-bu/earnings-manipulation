@@ -24,6 +24,7 @@ cash_flow = tic.cashflow
 #st.write(cash_flow)
 st.write(cash_flow.loc[['Operating Cash Flow','Net Income From Continuing Operations'],:])
 
+st.divider() 
 
 #if 'data' in st.session_state:
 #   st.write("Statistics of the DataFrame:")
