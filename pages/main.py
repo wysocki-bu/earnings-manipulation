@@ -7,15 +7,15 @@ st.title("Find Abnormal Accruals for a Stock")
 st.header("Modified Jones Model App")
 st.subheader("What, How, Why?")
 
-st.markdown(''' :rainbow[What?]''')
+st.markdown(''' :red[What?]''')
 st.write("This App trains a version of <Modified Jones Model> using data from Compustat to determine the")
 st.write("regular association between operations and accruals. Abnormal accruals are the residuals (e)")
 st.write("from the model below:")
  
 st.image("pages/files/model.png", caption="The model of normal accruals: Performance Matched Modified Jones Model")
 
-st.markdown(''' :rainbow[Why?]''')
-st.markdown(''' :rainbow[How?]''')
+st.markdown(''' :red[Why?]''')
+st.markdown(''' :red[How?]''')
 
 url = "https://github.com/wysocki-bu/earnings-manipulation/"
 st.write("Link to GitHub respository for StreamLit App is here:")
