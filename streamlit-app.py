@@ -4,7 +4,7 @@ import streamlit as st
 # **** Page layout setup ****
 App_page_0 = st.Page(
     "pages/main.py",
-    title="Click here to select stock",
+    title="Info about this App",
     default=True
 )
 App_page_1 = st.Page(
