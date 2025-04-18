@@ -7,6 +7,8 @@ st.title("Example App: Find Abnormal Accruals for a Company")
 st.header("What, How, Why?")
 
 st.write(f"What: .")
+
+st.image("sunrise.jpg", caption="The model of normal accruals: The Modified Jones Model")
 st.write(f"Wh: .")
 st.write(f"How: .")
 
