@@ -53,6 +53,10 @@ with tabs[1]:
 # Tab 3: Forecast Abnormal Accruals
 with tabs[2]:
 
+   st.subheader("Actual Accruals for MSFT:")
+   st.write("Total Accruals = TAC(t)/TA(t-1) = ", tac_ta)
+   st.subheader("Forecasted Normal Accruals:")
+   
    # load model
    # Display the results in Streamlit
    st.title("Parameters of Trained OLS Model")
