@@ -13,7 +13,7 @@ loaded_model = pickle.load(open(filename, 'rb'))
 st.title("2) Forecast Using Trained Model")
 st.header("   Select Tab in Sequence to Forecast Abnormal Accruals for a Stock Ticker")
 
-# Set up the4 tabs on the Dashboard
+# Set up the 4 tabs on the Dashboard
 tabs = st.tabs(["> Select Ticker", "> View Ratios", "> View Forecasted Accruals", "> Change Ratios (What If?)"])
 
 # Tab 1: Select Ticker 
@@ -35,8 +35,8 @@ with tabs[0]:
 
 # Tab 2: Financial Ratios for Ticker
 with tabs[1]:
-   st.write(balance_sheet.loc[['Total Assets',],1])
-   st.write(balance_sheet.loc[['Gross PPE',],0])
+   st.write(balance_sheet.loc[['Total Assets'],1])
+   st.write(balance_sheet.loc[['Gross PPE'],0])
 
 
 # Tab 3: Forecast Abnormal Accruals
