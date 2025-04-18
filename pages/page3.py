@@ -24,3 +24,5 @@ with tabs[1]:
 # Tab 3: Blank
 with tabs[2]:
     st.subheader("Blank for the moment")
+    values = st.slider("Select a range of values", 0.0, 100.0, (25.0, 75.0))
+    st.write("Values:", values)
