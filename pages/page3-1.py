@@ -57,9 +57,6 @@ with tabs[2]:
    st.write("Total Accruals = TAC(t)/TA(t-1) = ", tac_ta)
    st.subheader("Forecasted Normal Accruals:")
    
-   # load model
-   # Display the results in Streamlit
-   st.title("Parameters of Trained OLS Model")
 
 # Tab 4: page3.py
 with tabs[3]:
