@@ -2,6 +2,13 @@
 import streamlit as st
 import pandas as pd
 import yfinance as yf
+import statsmodels.api as sm
+import pickle
+
+filename = 'pages/ols_model.pkl'
+
+# Load the model
+loaded_model = pickle.load(open(filename, 'rb'))
 
 st.title("2) Forecast Using Trained Model")
 st.header("   Select Tab in Sequence to Forecast Abnormal Accruals for a Stock Ticker")
@@ -30,6 +37,12 @@ with tabs[0]:
 with tabs[1]:
 
    # load model
+   # Display the results in Streamlit
+   st.title("Parameters of Trained OLS Model")
+
+   # Display the model summary
+   st.write("Model Summary:")
+   st.write(loaded_model.summary())
 
    #create new DataFrame
    df_new = pd.DataFrame({'hours': [1, 2, 2, 4, 5],
