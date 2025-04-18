@@ -36,7 +36,7 @@ App_page_7 = st.Page(
     title="7) Manually Enter Data"
 )
 App_page_8 = st.Page(
-    "pages/page8.py",
+    "pages/page1.py",
     title="8) Regression Output"
 )
 
