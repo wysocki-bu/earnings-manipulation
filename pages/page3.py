@@ -19,7 +19,8 @@ with tabs[0]:
       
 # Tab 2: Get Data from YFinance
 with tabs[1]:
-    st.subheader("Look Up Data in Real Time - Ticker")
+    age = st.slider("How old are you?", 0, 130, 25)
+    st.write("I'm ", age, "years old")
 
 # Tab 3: Blank
 with tabs[2]:
