@@ -1,6 +1,9 @@
 import streamlit as st
 
 st.title("5. Code for this StreamLit App")
+st.subheader("Note that there are code blocks for each page in this app.")
+st.subheader("The blocks are listed separately below.")
+
 
 # The original Github repository for this app can be found here:
 # http:
