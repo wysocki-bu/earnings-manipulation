@@ -26,6 +26,11 @@ st.write(cash_flow.loc[['Operating Cash Flow','Net Income From Continuing Operat
 
 st.divider() 
 
+st.subheader("Streamlit Python Code for this page:")
+with open('pages/page2.py', 'r') as file:
+            code = file.read()
+            st.code(code, language='python')
+
 #if 'data' in st.session_state:
 #   st.write("Statistics of the DataFrame:")
 #   st.write(st.session_state.data.describe())
