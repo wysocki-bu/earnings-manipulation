@@ -25,17 +25,22 @@ with tabs[0]:
 
    cash_flow = tic.cashflow
    st.write(cash_flow.loc[['Operating Cash Flow','Net Income From Continuing Operations'],:])
-
-   
-   
-   
-   st.subheader("Code for Page 1")
-   with open('pages/page1.py', 'r') as file:
-            code = file.read()
-            st.code(code, language='python')
     
-# Tab 2: page2.py
+# Tab 2: Forecast Abnormal Accruals
 with tabs[1]:
+
+   # load model
+
+   #create new DataFrame
+   df_new = pd.DataFrame({'hours': [1, 2, 2, 4, 5],
+                       'exams': [1, 1, 4, 3, 3]})
+
+   #add column for constant
+   df_new = sm.add_constant(df_new)
+
+   #view new DataFrame
+   #print(df_new)
+
    st.subheader(f"Code for Page 2")
    with open('pages/page2.py', 'r') as file:
       code = file.read()
