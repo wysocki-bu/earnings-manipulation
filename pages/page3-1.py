@@ -56,7 +56,12 @@ with tabs[2]:
    st.subheader("Actual Accruals for MSFT:")
    st.write("Total Accruals = TAC(t)/TA(t-1) = ", tac_ta)
    st.subheader("Forecasted Normal Accruals:")
+   st.write("Total Forecasted Accruals = FTAC(t)/TA(t-1) = -0.091")
+   st.subheader("Manipulated Accruals = Actual - Forecasted Accruals:")
+   manip = -0.091 - tac_ta
+   st.write("ROA is manipulated by: ", manip)
    
+
 
 # Tab 4: page3.py
 with tabs[3]:
