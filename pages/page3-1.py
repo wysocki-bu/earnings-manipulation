@@ -36,6 +36,9 @@ with tabs[0]:
 # Tab 2: Financial Ratios for Ticker
 with tabs[1]:
 
+   inv_ta = 1/4419
+   st.write(inv_ta)
+   
    balance_sheet.columns = range(len(balance_sheet.columns))
 #   inv_ta = 1/(balance_sheet.loc[['Total Assets'],1])
 
