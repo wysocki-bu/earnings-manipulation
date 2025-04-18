@@ -16,8 +16,8 @@ App_page_2 = st.Page(
     title="2) Parameters of Trained Model"
 )
 App_page_3 = st.Page(
-    "pages/page3.py",
-    title="3) See Stock Price Graph"
+    "pages/page3-1.py",
+    title="3) Forecast & Analyze Accruals"
 )
 App_page_4 = st.Page(
     "pages/page4.py",
