@@ -37,8 +37,10 @@ with tabs[0]:
 with tabs[1]:
 
    balance_sheet.columns = range(len(balance_sheet.columns))
-   st.write(balance_sheet.loc[['Total Assets'],1])
-   st.write(balance_sheet.loc[['Gross PPE'],0])
+   inv_ta = 1/(balance_sheet.loc[['Total Assets'],1])
+   ppe_ta = (balance_sheet.loc[['Gross PPE'],1])/(balance_sheet.loc[['Total Assets'],1])
+   st.write("1/TA(t-1) = ",inv_ta)
+   st.write("GrossPPE(t)/TA(t-1) = ",ppe_ta)
 
 
 # Tab 3: Forecast Abnormal Accruals
