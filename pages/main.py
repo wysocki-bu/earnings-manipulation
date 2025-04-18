@@ -3,8 +3,9 @@ import pandas as pd
 import yfinance as yf
 
 # Print out info for the Main page:
-st.title("Example App: Find Abnormal Accruals for a Company")
-st.header("What, How, Why?")
+st.title("Find Abnormal Accruals for a Stock")
+st.header("Modified Jones Model App")
+st.subheader("What, How, Why?")
 
 st.write(f"What: .")
 
