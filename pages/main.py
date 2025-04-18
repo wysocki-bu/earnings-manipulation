@@ -8,7 +8,7 @@ st.header("What, How, Why?")
 
 st.write(f"What: .")
 
-st.image("/pages/files/jonesmodel.png", caption="The model of normal accruals: The Modified Jones Model")
+st.image("pages/files/jonesmodel.png", caption="The model of normal accruals: The Modified Jones Model")
 st.write(f"Wh: .")
 st.write(f"How: .")
 
