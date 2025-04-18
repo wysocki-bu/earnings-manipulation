@@ -58,7 +58,7 @@ with tabs[2]:
    st.subheader("Forecasted Normal Accruals:")
    st.write("Total Forecasted Accruals = FTAC(t)/TA(t-1) = -0.091")
    st.subheader("Manipulated Accruals = Actual - Forecasted Accruals:")
-   manip = -0.091 - tac_ta
+   manip = tac_ta - (-0.091) 
    st.write("ROA is manipulated by: ", manip)
    
 
