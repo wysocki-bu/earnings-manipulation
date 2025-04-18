@@ -13,7 +13,7 @@ App_page_1 = st.Page(
 )
 App_page_2 = st.Page(
     "pages/page2-1.py",
-    title="2) See Data Statistics"
+    title="2) Parameters of Trained Model"
 )
 App_page_3 = st.Page(
     "pages/page3.py",
