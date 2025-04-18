@@ -9,7 +9,7 @@ App_page_0 = st.Page(
 )
 App_page_1 = st.Page(
     "pages/page1-1.py",
-    title="1) See Raw Stock Data"
+    title="1) Model Training Code"
 )
 App_page_2 = st.Page(
     "pages/page2.py",
